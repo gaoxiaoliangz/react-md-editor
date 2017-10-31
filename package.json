@@ -4,7 +4,8 @@
   "description": "React Markdown Editor",
   "main": "lib/MDEditor.js",
   "directories": {
-    "lib": "./lib"
+    "lib": "./lib",
+    "dist": "./dist"
   },
   "author": "Jed Watson",
   "homepage": "https://github.com/JedWatson/react-md-editor",
