@@ -1,0 +1,52 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch via NPM2",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "watch"
+      ],
+      "port": 9229
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/lib/MDEditor.js"
+    },
+    {
+      "request": "launch",
+      // Name of configuration; appears in the launch configuration drop down menu.
+      "name": "Debug gulpfile.js",
+      // Type of configuration. Possible values: "node", "mono".
+      "type": "node",
+      // Workspace relative or absolute path to the program.
+      "program": "${workspaceFolder}/gulpfile.js",
+      // Automatically stop program after launch.
+      "stopOnEntry": false,
+      // Command line arguments passed to the program.
+      "args": [
+        "watch:lib"
+      ],
+      // Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+      // "cwd": ".",
+      // Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+      "runtimeExecutable": null,
+      // Optional arguments passed to the runtime executable.
+      "runtimeArgs": [
+        "--nolazy"
+      ],
+      // Environment variables passed to the program.
+      "env": {},
+      // Use JavaScript source maps (if they exist).
+      "sourceMaps": false
+    }
+  ]
+}
