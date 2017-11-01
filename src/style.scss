@@ -2,7 +2,7 @@
  * Markdown Editor
  */
 
-@button-gutter: 4px;
+$button-gutter: 4px;
 
 .MDEditor_editor {
 	border: 1px solid #ccc;
@@ -12,8 +12,8 @@
 }
 
 .MDEditor_toolbar {
-	margin-bottom: @button-gutter;
-	margin-top: @button-gutter;
+	margin-bottom: $button-gutter;
+	margin-top: $button-gutter;
 }
 
 .MDEditor_toolbarButton {
@@ -22,7 +22,7 @@
 	border-radius: 4px;
 	cursor: pointer;
 	display: inline-block;
-	margin-right: @button-gutter;
+	margin-right: $button-gutter;
 	padding: 10px 0;
 	text-align: center;
 	vertical-align: middle;
