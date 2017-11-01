@@ -31,7 +31,6 @@ class MarkdownEditor extends React.Component {
 
 	componentDidMount () {
 		var $textarea = ReactDOM.findDOMNode(this.codemirror)
-		console.log($textarea)
 		this.codeMirror = CM.fromTextArea($textarea, this.getOptions());
 		this.codeMirror.on('change', this.codemirrorValueChanged.bind(this));
 		this.codeMirror.on('focus', this.focusChanged.bind(this, true));
